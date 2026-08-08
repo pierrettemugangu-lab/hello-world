@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+  <h1>Git & GitHub Assignment Process</h1>
+  
+  <section>
+    <h2>Objectives Completed</h2>
+    <ul>
+      <li>Connected local repository to remote GitHub repository</li>
+      <li>Staged and committed changes locally</li>
+      <li>Pushed commits to remote branch</li>
+      <li>Pulled updates from remote repository</li>
+      <li>Cloned and forked repositories</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Commands Executed</h2>
+    <pre>
+git status
+git add .
+git commit -m "Your commit message"
+git remote set-url origin https://github.com/pierrettemugangu-lab/hello-world.git
+git push -u origin main
+git pull origin main
+git clone https://github.com/pierrettemugangu-lab/hello-world.git
+    </pre>
+  </section>
+
+  <h1>Git & GitHub Commands Reference Guide</h1>
+
+  <section>
+    <h2>1. Repository Initialization & Configuration</h2>
+    <ul>
+      <li><code>git init</code> - Initializes a new local Git repository in the current folder.</li>
+      <li><code>git branch -M main</code> - Renames the default local branch to <strong>main</strong>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Local Workflow (Tracking & Committing)</h2>
+    <ul>
+      <li><code>git status</code> - Displays the current state of modified, staged, or untracked files.</li>
+      <li><code>git diff</code> - Shows unstaged line-by-line changes made to files.</li>
+      <li><code>git add [filename]</code> - Stages a specific file for the next commit.</li>
+      <li><code>git add .</code> - Stages all modified, deleted, and newly created files at once.</li>
+      <li><code>git commit -m "your message"</code> - Saves a snapshot of staged changes with a descriptive message.</li>
+      <li><code>git log</code> - Displays the complete commit history.</li>
+      <li><code>git log --oneline</code> - Displays a condensed, single-line commit history.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Remote Repository Connection</h2>
+    <ul>
+      <li><code>git remote add origin [URL]</code> - Links your local repository to a remote GitHub repository.</li>
+      <li><code>git remote set-url origin [URL]</code> - Updates or corrects the remote repository URL.</li>
+      <li><code>git remote -v</code> - Lists all remote connections associated with your local repository.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Pushing & Pulling Changes</h2>
+    <ul>
+      <li><code>git push -u origin main</code> - Uploads local commits to GitHub for the first time and sets default branch tracking.</li>
+      <li><code>git push</code> - Uploads local commits to the default remote branch after initial setup.</li>
+      <li><code>git pull origin main</code> - Fetches and merges changes from the remote repository to your local folder.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Cloning & Forking</h2>
+    <ul>
+      <li><code>git clone [URL]</code> - Downloads an entire remote repository to your local machine.</li>
+      <li><strong>Forking:</strong> Created via the GitHub interface by clicking <em>Fork</em>, then downloaded locally using <code>git clone [FORKED_URL]</code>.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
