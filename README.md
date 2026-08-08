@@ -31,8 +31,6 @@ The goal of this assignment is to build strong muscle memory for daily Git comma
 * git pull origin main - Synchronized remote changes locally.
 * git clone [URL] - Downloaded a repository copy locally.
 
----
-
 ## File Structure
 * index.html - HTML document displaying the command reference guide.
 * style.css - Custom styling for the HTML reference page.
